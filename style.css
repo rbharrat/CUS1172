@@ -77,3 +77,9 @@ img.interest {
 img.interest:hover {
     opacity: 1.0;
 }
+
+@media print {
+    .screen_only {
+        display:none;
+    }
+}
