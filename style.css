@@ -1,7 +1,11 @@
 body{
-    margin: 10;
-    padding: 0;
     background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 nav.menu{
     margin-top: -10px;
@@ -53,17 +57,12 @@ li{
     color:white;
 }
 
-h3{
-    color:white;
-}
 
 p{
     color:white;
 }
 
-h2{
-    color:white;
-}
+
 
 table, th, td {
     border: 1px solid;
@@ -82,4 +81,23 @@ img.interest:hover {
     .screen_only {
         display:none;
     }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.rounded{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
 }
