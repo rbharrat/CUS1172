@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rajiv CUS1172</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+<script>
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("nav .container ul li");
+    window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute("id"); }
+        });
+
+        navLi.forEach((li) => {
+            li.classList.remove("active");
+            if (li.classList.contains(current)) {
+                li.classList.add("active");
+            }
+        });
+    };
+</script>
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../logo.png" width="200" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#basicprofileinfo" class="nav-link">
+                            Basic Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#educationprofile" class="nav-link">
+                            Education & Work Experience
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#programmingskills" class="nav-link">
+                            Programming Skills & Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#generalinterests" class="nav-link">
+                            General Interests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#favorites" class="nav-link">
+                            My Favorite Things
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            Contact Me Today                </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<br><br><br><br>
+<div class="container">
+    <div class="row justify-content-center" >
+        <div id="basicprofileinfo">
+            <img src="../rajiv.jpg" width="250" height="250" class="rounded">
+            <h1 style="color:white">Hey! Welcome to my page, I'm Rajiv! </h1>
+        </div>
+    </div></div>
+<div class="container">
+    <div class="row justify-content-center" >
+        <p> My full name is Rajiv Bharrat and I'm a senior at <span style="color:red"> St. John's University. </span>
+            I'm currently majoring in <span style="color:orange"> Computer Science </span> with a minor in Cyber Security.
+            My birthday is on April 2nd, 2001 and I'm currently 21 years old.
+            Feel free to click on the other links to learn more about me! </p>
+
+    </div></div>
+
+<hr>
+<div class="container">
+    <div class="row justify-content-center" >
+        <div id="educationprofile">
+            <h3 style="color:white"><u> Education Section Summary </u></h3>
+        </div>
+    </div></div></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <p> I'm currently pursuing a degree in Computer Science with a minor in Cyber Security.
+            My major is called Computer Science - Security Systems. I currently have a high school
+            diploma and will receieve my bachelors hopefully the end of May 2023.</p>
+    </div></div>\
+
+<hr>
+<div class="container">
+    <div class="row justify-content-center">
+        <h3 style="color:white"><u> Work Experience / Internships </u></h3>
+    </div>
+    <div class="row justify-content-center" >
+        <div id="workexperience">
+            <ul>
+                <li>Presti & Naegele I.T. Department</li>
+                <ul>
+                    <li>Currently interning for the I.T. Department at Presti & Naegele</li>
+                    <li>Monitor all security logs using <b>CISCO</b>, <b>Azure </b>& other services</li>
+                    <li>Perform regular system checks on all devices to maintain proper security </li>
+                    <li>Worked with team members on creating a custom bookkeeping application for a law firm</li>
+                    <li>Used <b>SQL</b> for data transfer and management between databases</li>
+                </ul>
+                <br>
+                <li>Astoria Internet Cafe</li>
+                <ul>
+                    <li>Maintained multiple computers throughout the cafe daily by running systems checks, performing
+                        necessary upgrades on all systems, and completed repairs on laptops, computers, and mobile devices</li>
+                    <li>Helped multiple customers with diagnosing their systems and gave instructions on proper repair
+                        procedures.</li>
+                    <li>Managed a cloud-based management system, ggLeap, that allowed the café to monitor their systems
+                        remotely. </li>
+                    <li>Coded an inventory management system to help keep track of purchases.</li>
+                </ul></ul>
+        </div> </div></div>
+<hr>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div id="programmingskills">
+            <h3 style="color:white"><u> Programming Skills section </u></h3>
+        </div></div></div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <p>
+            <b>Proficient: </b> Java <br>
+            <b>Comfortable: </b> JavaFX, JavaSQL, SQL, PHP, HTML, CSS <br>
+            <b>Technologies: </b> MongoDB, Android Studio, IntelliJ, SQL/NoSQL, Git <br>
+            <b>Coursework: </b> Advanced Java Programming, Data Structures & Algorithms, Software Engineering &
+            Design, Computer Architecture & Organization, <br> Cryptography & Security,
+            Cybersecurity & Digital Forensics, Networking, Database Design & Management </p>
+    </div></div>
+<hr>
+<div class="container">
+    <div class="row justify-content-center">
+        <div id="projects">
+            <h3 style="color:white"><u> My Projects in this course </u></h3>
+        </div></div></div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <p>
+            This website is the only project I am currently working on!
+        </p>
+    </div></div>
+<hr>
+<div class="container">
+    <div class="row justify-content-center" >
+        <div id="generalinterests">
+            <h2 style="color:white"><u> General Interests Section </u></h2>
+        </div>
+    </div></div>
+<div class="container">
+    <div class="row justify-content-center" >
+        <p>
+            My interests are fairly simple. I love to code on my freetime and learn more about coding. I also have a huge passion for cars <br>
+            and work on my car very frequently. I also learned about mechanics at a mechanic shop and how to do maintenance/repairs on my car. <br>
+            Below is a picture of my realistic dream car that I hope to get one day, the Nissan GT-R35. Hover over it to see it better!<br>
+        </p>
+    </div></div>
+<div class="container">
+    <div class="row justify-content-center" >
+        <img class="interest" src="https://c4.wallpaperflare.com/wallpaper/959/23/688/black-nissan-drives-nissan-wallpaper-preview.jpg" width="750" height="500">
+    </div></div>
+<hr>
+<div class="container">
+    <div class="row justify-content-center" >
+        <div id="gtrvideo">
+            <h2 style="color:white"> Here is a video of the GTR-35</h2>
+            <video width="400" controls>
+                <source src="../gtr35.mp4" type="video/mp4"/>
+                Your browser does not support HTML5 video
+            </video>
+        </div>
+    </div></div>
+<hr>
+<div class="container">
+    <div class="row justify-content-center" >
+        <div id="favorites">
+            <h3 style="color:white"><u> Favorite song, film, and TV show section </u></h3>
+            <table>
+                <tr>
+                    <th>Music</th>
+                    <th>Movie</th>
+                    <th>TV Show</th>
+                </tr>
+                <tr>
+                    <td>Trophies - Drake</td>
+                    <td>Fast & Furious</td>
+                    <td>Peaky Blinders</td>
+                </tr>
+                <tr>
+                    <td>Wants & Needs - Drake </td>
+                    <td>Spiderman: No Way Home</td>
+                    <td>White Collar</td>
+                </tr>
+                <tr>
+                    <td>Middle Child - J. Cole </td>
+                    <td></td>
+                    <td>Narcos: Mexico</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div id="favwebsite">
+            <h3 style="color:white"><u> Favorite Website section </u></h3>
+            <p>I dont really have a favorite website however below are websites I browse very often:</p>
+            <Ul>
+                <li><a href="http://youtube.com" target="_blank">https://youtube.com/ </a></li>
+                <li><a href="http://amazon.com" target="_blank">http://amazon.com/ </a></li>
+                <li><a href="http://netflix.com" target="_blank">https://netflix.com/ </a></li>
+                <li><a href="http://leetcode.com" target="_blank">https://leetcode.com/ </a></li>
+
+            </Ul>
+        </div>
+    </div></div>
+<hr>
+<div class="container">
+    <div class="row justify-content-center" >
+        <div id="contact" class="contact">
+            <h3><span style="color:black">Contact Rajiv </span> </h3>
+            <form action="https://formsubmit.co/rajivkhan6@gmail.com" method="POST">
+                <label for="fname">Full Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">E-mail:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="lname">Description:</label><br>
+                <textarea rows = "5" cols = "60" name = "description"> </textarea> <br>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div></div>
+<!-- test -->
+<hr>
+<h1> TO DO LIST</h1>
+<div class="container">
+    <input id="inputField" type="text"><button id="addToDo">+</button>
+    <div class="to-dos" id="toDoContainer">
+
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
