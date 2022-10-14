@@ -4,36 +4,16 @@
     <meta charset="UTF-8">
     <title>Rajiv CUS1172</title>
 
-    <link rel="stylesheet" href="../style.css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assignment02/main.css">
 
 </head>
 <body>
-<script>
-    const sections = document.querySelectorAll("section");
-    const navLi = document.querySelectorAll("nav .container ul li");
-    window.onscroll = () => {
-        var current = "";
-
-        sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 60) {
-                current = section.getAttribute("id"); }
-        });
-
-        navLi.forEach((li) => {
-            li.classList.remove("active");
-            if (li.classList.contains(current)) {
-                li.classList.add("active");
-            }
-        });
-    };
-</script>
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../logo.png" width="200" height="50"></a>
+            <a class="navbar-brand" href="#"><img src="logo.png" width="200" height="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -80,7 +60,7 @@
 <div class="container">
     <div class="row justify-content-center" >
         <div id="basicprofileinfo">
-            <img src="../rajiv.jpg" width="250" height="250" class="rounded">
+            <img src="rajiv.jpg" width="250" height="250" class="rounded">
             <h1 style="color:white">Hey! Welcome to my page, I'm Rajiv! </h1>
         </div>
     </div></div>
@@ -99,7 +79,9 @@
         <div id="educationprofile">
             <h3 style="color:white"><u> Education Section Summary </u></h3>
         </div>
-    </div></div></div>
+    </div>
+</div>
+
 <div class="container">
     <div class="row justify-content-center">
         <p> I'm currently pursuing a degree in Computer Science with a minor in Cyber Security.
@@ -191,7 +173,7 @@
         <div id="gtrvideo">
             <h2 style="color:white"> Here is a video of the GTR-35</h2>
             <video width="400" controls>
-                <source src="../gtr35.mp4" type="video/mp4"/>
+                <source src="gtr35.mp4" type="video/mp4"/>
                 Your browser does not support HTML5 video
             </video>
         </div>
@@ -257,24 +239,6 @@
     </div></div>
 <!-- test -->
 <hr>
-
-
-<div class="container">
-    <div class="row justify-content-center" >
-        <div id="tasklist">
-            <h2 style="color:white"><u> To Do List </u></h2>
-        </div>
-    </div></div>
-<div class="container">
-    <div class="row justify-content-center" >
-    <input id="inputField" type="text"><button id="addToDo">+</button>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row justify-content-center" >
-<div class="to-dos" id="toDoContainer">
-</div></div></div>
-<script src="main.js"></script>
 </body>
+
 </html>
