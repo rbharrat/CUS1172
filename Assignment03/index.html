@@ -7,7 +7,18 @@
     <title>Quiz App</title>
 </head>
 <body>
-<div class="container">
+<div id="nam-input" class="naminputclass">
+    <div style="text-align: center;">
+        <h1 style="color:white">
+            Welcome! Please enter your name below:
+        </h1>
+        <input id="name" />
+        <button id="namebtn">Lets Go!</button>
+    </div>
+
+</div>
+
+<div id="allquestions" class="container hide">
     <div id="question-container" class="hide">
         <div class="hud-item">
             <p class="hud-prefix">
@@ -28,10 +39,21 @@
         </div>
     </div>
 
+    <div id="welcomemessage">
+       <p class="nametestt" id="nametest"></p>
+    </div>
+
+    <div id="nameinput" class="name_input hide">
+        Type in your name: <label for="nameinputt"></label><input id="nameinputt">
+    </div>
+
+
     <div class="controls">
-            <button id="start-btn" class="start-btn btn" > Start </button>
+            <button id="start-btn" class="start-btn btn" type="submit"> Start </button>
             <button id="next-btn" class="next-btn btn hide" > Next </button>
         </div>
+
+    <p id="demo"></p>
 </div>
 </body>
 </html>
