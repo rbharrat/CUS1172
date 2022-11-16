@@ -23,6 +23,7 @@ nmeButton.addEventListener('click', enterName)
 function enterName() {
     nmeInput.classList.add('hide');
     allquestions.classList.remove('hide');
+    alert(`Welcome ${name}`)
 }
 
 let shuffledQuestions, currentQuestionIndex
@@ -84,6 +85,8 @@ function selectAnswer(e) {
         setStatusClass(button, button.dataset.correct)
     })
     questionCounter++;
+    document.getElementById("questionNumber").innerHTML = `${questionCounter+1}/20`;
+
     if(correct){
         score = score+1;
         document.getElementById("score").innerHTML = score;
@@ -170,7 +173,7 @@ const questions = [
         question: 'A do while and a while loop are the same',
         answers: [
             { text: 'True', correct: false},
-            { text: 'False', correct: false}
+            { text: 'False', correct: true}
         ]
     },
     {
@@ -198,6 +201,96 @@ const questions = [
             { text: '22', correct: false},
             { text: '10', correct: false},
             { text: '4', correct: true}
+        ]
+    },
+    {
+        question: 'What does HTML stand for',
+        answers: [
+            { text: 'HyperText Markup Language', correct: true},
+            { text: 'HyperTransfer Mixtape Language', correct: false},
+            { text: 'Hundred Thousand Mile Long', correct: false},
+            { text: 'Happy To Meet Larry', correct: false}
+        ]
+    },
+    {
+        question: 'What does OOP stand for',
+        answers: [
+            { text: 'Orientated Object Programming', correct: false},
+            { text: 'Oscar Owl Price', correct: false},
+            { text: 'Open Object Programming', correct: false},
+            { text: 'Object Orientated Programming', correct: true}
+        ]
+    },
+    {
+        question: 'What language is used for scripting',
+        answers: [
+            { text: 'Java', correct: false},
+            { text: 'Python', correct: true},
+            { text: 'Node.js', correct: false},
+            { text: 'CSS', correct: false}
+        ]
+    },
+    {
+        question: 'What is a language that uses a relational database',
+        answers: [
+            { text: 'NoSQL', correct: false},
+            { text: 'Ruby', correct: false},
+            { text: 'SQL', correct: true},
+            { text: 'R', correct: false}
+        ]
+    },
+    {
+        question: 'Which of the following declares a string correctly in Java',
+        answers: [
+            { text: 'String string = "Word"', correct: false},
+            { text: 'String string = "Word";', correct: true},
+            { text: 'sout(word);', correct: false},
+            { text: 'java.printline("hello")', correct: false}
+        ]
+    },
+    {
+        question: 'Which are the if else ternary operators used in Java',
+        answers: [
+            { text: '? and :', correct: true},
+            { text: '! and :', correct: false},
+            { text: '* and |', correct: false},
+            { text: '^ and =>', correct: false}
+        ]
+    },
+    {
+        question: 'Which of these variable types can you not directly modify in Java',
+        answers: [
+            { text: 'string', correct: true},
+            { text: 'int', correct: false},
+            { text: 'double', correct: false},
+            { text: 'long', correct: false}
+        ]
+    },
+    {
+        question: 'Which language is used to modify the appearance of a web page',
+        answers: [
+            { text: 'CSS', correct: true},
+            { text: 'Java', correct: false},
+            { text: 'Javascript', correct: false},
+            { text: 'R', correct: false}
+        ]
+    },
+    {
+        question: 'Which operator returns the remainder',
+        answers: [
+            { text: '%', correct: true},
+            { text: '/', correct: false},
+            { text: '!', correct: false},
+            { text: '!=', correct: false}
+        ]
+    },
+    {
+        question: 'Which method is required in Java to run',
+        answers: [
+            { text: 'run', correct: false},
+            { text: 'high', correct: false},
+            { text: 'main', correct: true},
+            { text: 'strong', correct: false}
         ]
     },
     {
