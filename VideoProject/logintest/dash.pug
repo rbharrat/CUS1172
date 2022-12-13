@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Title
+    body
+        h1 User: Rajiv
+        .vidurl
+            h4 Type in your video url you wish to add:
+            form
+                label(for='url')
+                input#url(type='text', placeholder='url')
+                |
+                button(type='button', onclick='#{updateGrid()}') Add Video
+        .dashboard
+            h3 Your videos:
+            #dashes.dashvids
+        script(src='main.js')

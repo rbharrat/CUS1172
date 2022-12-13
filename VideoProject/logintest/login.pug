@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Responsive Login Form Design
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        style
+            include style.css
+    body
+        .wrapper
+            .welcome
+                h3 Welcome, Please Sign In!
+            form.form(method='post', action=action_url)
+                .signin.active
+                    .form-group
+                        input#UserName(type='text', placeholder='User', required='')
+                    .form-group
+                        input#UserPassword(type='password', placeholder='Password', required='')
+                    button#loginbtn.btn(type='submit') LOGIN
+                    br
+                    .account-exist
+                        | Create New a account?
+                        a#signup(href='register.html') Signup
+        script(src='main.js')

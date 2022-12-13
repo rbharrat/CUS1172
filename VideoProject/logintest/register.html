@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Login Form Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="welcome">
+    <h3>Welcome, Please Register!</h3>
+  </div>
+  <form class="form" method="POST" action="register">
+
+    <div class="signup">
+      <div class="form-group">
+        <input id="userName" type="text" placeholder="User" required="">
+      </div>
+      <div class="form-group">
+        <input id="userEmail" type="email" placeholder="Email" required="">
+      </div>
+      <div class="form-group">
+        <input id="userPass" type="password" placeholder="Password" required="">
+      </div>
+      <button type="submit" class="btn" onclick="functionBlah()">SIGN UP</button>
+      <div class="account-exist">
+        Already have an account? <a href="index.html" id="login">Login</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
